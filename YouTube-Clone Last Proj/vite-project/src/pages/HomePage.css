@@ -1,0 +1,80 @@
+.home-page {
+  display: none;
+ 
+}
+
+.home-page header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Space between header and video grid */
+}
+
+.home-page header h1 {
+  font-size: 1.5rem; /* Larger title */
+  text-align: center;
+  margin-top: 150px;
+  color: darkblue; /* YouTube red color for branding */
+  margin: 0; /* Remove default margin */
+}
+
+.search-input {
+  width: 100%;
+  max-width: 600px; /* Max width for search bar */
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc; /* Light border for input */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for input */
+}
+
+.search-input:focus {
+  outline: none; /* Remove outline */
+  border-color: #ff0000; /* YouTube red border on focus */
+}
+
+/* Video Grid Styles */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+ gap: 20px; /* Space between video cards */
+}
+
+.video-card {
+  background-color: #202020; /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding around the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+  position: relative;
+  overflow: hidden; /* Prevent overflow on hover */
+  border: 1px solid transparent; /* Border for better structure */
+}
+
+.video-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+  border-color: #ff0000; /* Highlight on hover */
+}
+
+/* Thumbnail Styling */
+.video-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the space */
+}
+
+/* Video Info Styling */
+.video-title {
+  font-size: 18px; /* Increase title size for visibility */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff; /* Title color */
+}
+
+.video-stats {
+  font-size: 14px; /* Slightly larger for readability */
+  color: #888; /* Light gray for less prominent text */
+  margin-bottom: 10px;
+}

@@ -1,0 +1,146 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: se;
+    padding: 10px 20px;
+    background-color: #202020;
+    color: white;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-left: 0;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Add rotation for the bars when the sidebar opens */
+  .rotate-bar1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .rotate-bar2 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .fade-bar {
+    opacity: 0;
+  }
+  
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .youtube-icon {
+    font-size: 30px;
+    color: #ff0000; /* YouTube red */
+    margin-right: 8px;
+  }
+  
+  
+  /* src/components/Header.css */
+/* src/components/Header.css */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 8px 12px;
+  margin-left: 8px;
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-btn:hover {
+  background-color: #e60000;
+}
+
+
+  
+  .header-right {
+    margin-left: 20px;
+  }
+  
+  .sign-in-btn {
+    background-color: #cc0000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #ff0000;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar {
+      max-width: 400px; /* Adjust the search bar width for tablets */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu on smaller screens */
+    }
+  
+    .logo {
+      font-size: 1.2rem; /* Adjust logo font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-bar {
+      display: none; /* Hide the search bar on very small screens */
+    }
+  
+    .logo {
+      font-size: 1rem; /* Further reduce logo size */
+    }
+  
+    .header {
+      padding: 10px; /* Reduce header padding on small screens */
+    }
+  
+    .sign-in-btn {
+      padding: 6px 12px; /* Adjust button size */
+    }
+  }

@@ -1,0 +1,89 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 10px; /* Added margin for spacing around the grid */
+}
+
+/* Styling for each video card */
+.video-card {
+  background-color: #f8f8f8; /* Light background for video cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative; /* For positioning child elements */
+}
+
+.video-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Thumbnail styling */
+.video-thumbnail {
+  width: 100%;
+  height: 180px; /* Fixed height for thumbnails */
+  object-fit: cover; /* Cover the entire area */
+}
+
+/* Video details section */
+.video-details {
+  padding: 15px;
+  text-align: left; /* Left-align text for better readability */
+}
+
+.video-details h3 {
+  font-size: 1.2em; /* Larger font size for video titles */
+  color: #333; /* Dark color for titles */
+  margin: 0; /* Remove default margin */
+}
+
+.video-details p {
+  font-size: 0.9em; /* Slightly smaller font for description */
+  color: #666; /* Gray color for description */
+}
+
+/* Likes and dislikes section */
+.video-likes-dislikes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align icons and text */
+  margin-top: 10px;
+}
+
+/* Styling for like and dislike buttons */
+.video-likes, .video-dislikes {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Icons for likes and dislikes */
+.video-likes i, .video-dislikes i {
+  color: #007bff; /* Default color for icons */
+  margin-right: 5px;
+}
+
+/* Hover effect on icons */
+.video-likes:hover i {
+  color: green; /* Change to green on hover for likes */
+}
+
+.video-dislikes:hover i {
+  color: red; /* Change to red on hover for dislikes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}

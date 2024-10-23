@@ -1,0 +1,127 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05); 
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.main-container {
+  background-color: #e0f7fa;
+  width: 100%;
+  border-radius: 8px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail-container {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 10px;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 150px; 
+  background-color: #202020;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+  transform: translateX(50px 5px);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #333;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  margin: 10px;
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; 
+  }
+
+  .logo {
+    height: 5em;
+  }
+
+  .card {
+    padding: 1.5em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .logo {
+    height: 4em; 
+  }
+
+  .video-thumbnail-container {
+    padding: 5px;
+  }
+
+  .card {
+    margin: 5px;
+  }
+}

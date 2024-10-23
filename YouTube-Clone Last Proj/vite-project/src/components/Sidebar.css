@@ -1,0 +1,49 @@
+/* Sidebar.css */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: -250px; /* Hidden by default */
+    width: 150px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease; /* Smooth transition for opening */
+    z-index: 999;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Moves into view when open */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .sidebar ul li:hover {
+    color: #ff9800; /* Highlight on hover */
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px; /* Adjust sidebar width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 180px; /* Further reduce sidebar width for small screens */
+    }
+  }
+  

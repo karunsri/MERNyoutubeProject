@@ -1,0 +1,100 @@
+/* ChannelPage.css */
+
+.channel-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #181818;
+  padding: 20px;
+}
+
+.channel-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.channel-banner {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  top: -50px; /* Positioning over banner */
+}
+
+.channel-profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #181818; /* To create a gap between profile pic and banner */
+}
+
+.channel-details {
+  margin-left: 20px;
+}
+
+.channel-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.channel-subscribers {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.subscribe-btn {
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: darkred;
+}
+
+.channel-tabs {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.channel-tabs ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.channel-tabs li {
+  margin-right: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.active-tab {
+  border-bottom: 2px solid red;
+}
+
+.channel-videos h3 {
+  margin-bottom: 20px;
+}
+
+.channel-videos {
+  background-color: #202020;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+  

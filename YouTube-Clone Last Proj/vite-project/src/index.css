@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+header, .sidebar {
+  position: fixed;
+}
+
+main {
+  margin-left: 220px;
+}
+
+button {
+  cursor: pointer;
+}

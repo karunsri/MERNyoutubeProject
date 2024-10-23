@@ -1,0 +1,72 @@
+.user-details-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+    padding: 30px; 
+    z-index: 1000; 
+    width: 300px; 
+    animation: fadeIn 0.3s; 
+  }
+  
+  .user-details-form h2 {
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333;
+    text-align: center; 
+  }
+  
+  .user-details-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-details-form input {
+    margin-bottom: 15px;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s; 
+  }
+  
+  .user-details-form input:focus {
+    border-color: #007bff; 
+    outline: none; 
+  }
+  
+  .user-details-form button {
+    width: 80px;
+    padding: 5px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  .user-details-form button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+  }
+  
+  .user-details-form button:active {
+    transform: translateY(0); 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%); 
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%); 
+    }
+  }
+  
